@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --clr-very-dark-blue:#1f2937;
+  --clr-green:#4adf86;
+  --clr-bright-green:#55f991;
+  --clr-dark-blue:#273549;
+  --clr-medium-gray:#d5d4d8;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body{
+  background-color: #1c1c1c;
+  color:#fff;
+}
+
+.container{
+  min-height: 100vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.wrapper{
+  background-color: var(--clr-very-dark-blue);
+  padding:2em;
+  border-radius: .6em;
+  width:min(90%,33rem);
+}
+
+span{
+  color:var(--clr-green);
+}
+
+h1{
+  font-size: 2em;
+  margin-bottom: .3em;
+}
+
+.subheading{
+  font-size: 1em;
+  font-weight: 300;
+  color:var(--clr-medium-gray);
+  margin-bottom: 2em;
+}
+
+button{
+  background-color: var(--clr-green);
+  border:none;
+  color:white;
+  padding:.75em 1em;
+  border-radius:.5em;
+  margin-bottom: 2em;
+  transition:  all ease 0.15s;
+}
+
+button:hover{
+  background-color: white;
+  color:var(--clr-bright-green);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+
+hr{
+  background-color: var(--clr-dark-blue);
+  color:var(--clr-dark-blue);
+  height:1px;
+  border:none;
+}
+
+.passwords{
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap:1em;
+  margin-top: 1em;
+}
+
+.generated-password{
+  background-color: var(--clr-dark-blue);
+  border-radius: .3em;
+  text-align: center;
+  color:var(--clr-very-dark-blue);
+  padding:.5em 2em;
+
+}
+
+.attribution{
+  text-align: center;
+  font-size: .7em;
+}
+a{
+  text-decoration: none;
+  color:hsl(228,45%,44%);
+} 
+
+@media(max-width:520px){
+  .passwords{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
