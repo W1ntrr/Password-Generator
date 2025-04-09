@@ -1,6 +1,6 @@
 {
   "name": "password-generator",
-  "homepage":"https://github.com/W1ntrr/Password-Generator.git",
+  "homepage":"https://w1ntrr.github.io/Password-Generator/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
