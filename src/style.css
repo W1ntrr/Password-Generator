@@ -39,12 +39,12 @@ span{
 }
 
 h1{
-  font-size: 2em;
+  font-size: 2.1em;
   margin-bottom: .3em;
 }
 
 .subheading{
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 300;
   color:var(--clr-medium-gray);
   margin-bottom: 2em;
@@ -53,6 +53,7 @@ h1{
 button{
   background-color: var(--clr-green);
   border:none;
+  font-size: .9em;
   color:white;
   padding:.75em 1em;
   border-radius:.5em;
@@ -64,6 +65,11 @@ button:hover{
   background-color: white;
   color:var(--clr-bright-green);
   box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  cursor:pointer;
+}
+
+button:active{
+  scale: 0.95;
 }
 
 hr{
@@ -78,7 +84,7 @@ hr{
   grid-template-columns:repeat(2,1fr);
   grid-template-rows: repeat(2,1fr);
   gap:1em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .generated-password{
@@ -88,6 +94,15 @@ hr{
   color:var(--clr-very-dark-blue);
   padding:.5em 2em;
 
+}
+
+input{
+  background:none;
+  border:none;
+  color:var(--clr-bright-green);
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .attribution{
