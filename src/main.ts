@@ -17,8 +17,8 @@ function generatePassword():string{
 }
 
 function displayGeneratedPassword(){
-  password!.innerHTML = `<div class="generated-password" id="password1"><input type="text" value="${generatePassword()}"></div>
-          <div class="generated-password" id="password2"><input type="text" value="${generatePassword()}"></div>
-          <div class="generated-password" id="password3"><input type="text" value="${generatePassword()}"></div>
-          <div class="generated-password" id="password4"><input type="text" value="${generatePassword()}"></div>`
+  password!.innerHTML = `<div class="generated-password" id="password1"><input type="text" value="${generatePassword()} readonly"></div>
+          <div class="generated-password" id="password2"><input type="text" value="${generatePassword()} readonly"></div>
+          <div class="generated-password" id="password3"><input type="text" value="${generatePassword()} readonly"></div>
+          <div class="generated-password" id="password4"><input type="text" value="${generatePassword()} readonly"></div>`
 }
